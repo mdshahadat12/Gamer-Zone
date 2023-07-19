@@ -192,36 +192,104 @@ body {
     width: 100%;
 }
 
-/* games car section */
+/* games card section */
+
+.card-head {
+    width: 80%;
+    text-align: center;
+    margin: 80px auto;
+}
+
+.card-head h1 {
+    color: #0B0223;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.card-head p {
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 15px;
+}
 
 .games-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     max-width: 1200px;
     width: 80%;
     margin: auto;
     margin-bottom: 200px;
 }
-.card{
+
+.card {
+
+    background-image: url(./images/Rectangle\ 4.png);
+    background-size: cover;
     height: 300px;
     width: 260px;
     text-align: center;
+    border: solid white;
+    border-radius: 15px;
 }
-/* .card img {
-} */
 
-/* .card:hover {
-    background-color: #0B0223;
-    border-radius: 16px;
-    border: 5px solid #FF42A5;
+.card-b {
+    background-image: url(./images/Rectangle\ 5.png);
 
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url(./images/Rectangle\ 4.pg), lightgray 50% /cover no-repeat;
-} */
+}
 
-/* .card:hover img {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), lightgray 50%  /cover no-repeat;
-    background-color: #0B0223;
-    border-radius: 20px;
-    border: 5px solid #FF42A5;
-} */
+.card-c {
+    background-image: url(./images/Rectangle\ 7.png);
+
+}
+
+.card-d {
+    background-image: url(./images/Rectangle\ 6.png);
+
+}
+
+.card p {
+    color: #534C64;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 20px;
+}
+
+.card-icon {
+    width: 260px;
+    height: 300px;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card:hover {
+    background-color: rgba(0, 0, 0, 0.552);
+    background-blend-mode: multiply;
+    border: solid #F43F9E;
+    border-radius: 15px;
+    visibility: show;
+}
+
+.card-icon:hover {
+    opacity: 1;
+}
+
+.card i {
+    color: #FFF;
+    font-size: 30px;
+}
+
+.card-discription {
+    color: #FF42A5;
+}
 
 /* download section */
 .download-section {
@@ -265,36 +333,42 @@ body {
     width: 40%;
 }
 
-/* game name section */
+/* games name section */
 
-.games-name{
+.games-name {
     display: flex;
     flex-wrap: wrap;
     max-width: 1200px;
     width: 80%;
-    margin:50px auto;
+    margin: 50px auto;
 }
-.logo-name{
+
+.logo-name {
+    color: #0B0223;
+    font-size: 16px;
+    font-weight: 600;
     display: flex;
     align-items: center;
     gap: 10px;
     padding: 5px;
     width: 200px;
     margin: 10px;
-    border:3px solid white;
+    border: 3px solid white;
 }
-.logo-name:hover{
-    border:3px solid #FF42A5;
+
+.logo-name:hover {
+    border: 3px solid #FF42A5;
     border-radius: 50px;
-    color:#FF42A5;
+    color: #FF42A5;
 }
 
 
 /* footer section */
-footer{
+footer {
     background-color: #0B0223;
 }
-.footer{
+
+.footer {
     width: 80%;
     margin: auto;
     text-align: center;
@@ -302,38 +376,46 @@ footer{
     padding: 120px 0px;
     font-size: 15px;
 }
-.footer-menu{
+
+.footer-menu {
     margin-top: 30px;
 }
-.footer-menu ul{
+
+.footer-menu ul {
     list-style: none;
     display: flex;
     justify-content: center;
     gap: 20px;
 }
-.policy{
+
+.policy {
     margin-bottom: 25px;
     color: rgba(255, 255, 255, 0.60);
 }
-.policy ul{
+
+.policy ul {
     display: flex;
     justify-content: center;
     gap: 30px;
     list-style: none;
 }
-.footer-icon{
+
+.footer-icon {
     margin: 40px 0px;
 }
-.footer-icon a{
+
+.footer-icon a {
     text-decoration: none;
     color: white;
     padding: 10px;
     font-size: 20px;
 }
-.footer .logo{
+
+.footer .logo {
     justify-content: center;
 }
-.cpoy-sing{
+
+.cpoy-sing {
     color: rgba(255, 255, 255, 0.60);
 }
 
@@ -373,39 +455,51 @@ footer{
         width: 100%;
         text-align: center;
     }
-    .download-section{
+
+    .download-section {
         flex-direction: column;
     }
-    .download-content p{
+
+    .download-content p {
         width: 100%;
     }
+
     .download-img {
         width: 80%;
     }
+
     .small-img {
         position: relative;
         margin-top: -80px;
         margin-left: -50px;
     }
-    .games-name{
-        /* grid-template-columns: 1fr 1fr 1fr; */
-    }
-    .logo-name{
+
+    .logo-name {
         width: 70px;
-        font-size:10px;
+        font-size: 10px;
     }
-    .logo-name img{
+
+    .logo-name img {
         width: 30px;
     }
+
     .footer-menu ul,
-    .policy ul{
+    .policy ul {
         flex-wrap: wrap;
     }
+    .games-card{
+        flex-direction: column;
+        gap: 110px;
+    }
+
 
 }
 
 
 @media screen and (min-width: 576px) and (max-width: 968px) {
+    .banner-content {
+        width: 60%;
+    }
     .gamer-container {
         flex-direction: column;
         align-items: center;
@@ -420,27 +514,28 @@ footer{
         width: 100%;
         text-align: center;
     }
-    .games-name{
-        /* grid-template-columns: 1fr 1fr 1fr; */
-    }
-    
-    .logo-name{
+
+    .logo-name {
         width: 100px;
-        font-size:15px;
+        font-size: 15px;
     }
-    .logo-name img{
+
+    .logo-name img {
         width: 50px;
     }
-    
-    .download-section{
+
+    .download-section {
         flex-direction: column;
     }
-    .download-content p{
+
+    .download-content p {
         width: 100%;
     }
+
     .download-img {
         width: 80%;
     }
+
     .small-img {
         position: relative;
         margin-top: -80px;
