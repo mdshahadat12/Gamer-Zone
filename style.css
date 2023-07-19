@@ -14,6 +14,7 @@ body {
 .logo {
     display: flex;
     gap: 18px;
+    align-items: center;
 }
 
 .logo img {
@@ -163,7 +164,7 @@ body {
     width: 60%;
 }
 
-.gamer-container h1 {
+.header-text {
     font-size: 42px;
     font-weight: 700;
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
@@ -189,6 +190,151 @@ body {
 
 .gamer-img img {
     width: 100%;
+}
+
+/* games car section */
+
+.games-card {
+    max-width: 1200px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 200px;
+}
+.card{
+    height: 300px;
+    width: 260px;
+    text-align: center;
+}
+/* .card img {
+} */
+
+/* .card:hover {
+    background-color: #0B0223;
+    border-radius: 16px;
+    border: 5px solid #FF42A5;
+
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url(./images/Rectangle\ 4.pg), lightgray 50% /cover no-repeat;
+} */
+
+/* .card:hover img {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), lightgray 50%  /cover no-repeat;
+    background-color: #0B0223;
+    border-radius: 20px;
+    border: 5px solid #FF42A5;
+} */
+
+/* download section */
+.download-section {
+    max-width: 1200px;
+    width: 80%;
+    margin: 100px auto;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.download-content {
+    text-align: center;
+}
+
+.download-content h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+.download-content p {
+    width: 50%;
+    margin: 30px auto;
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.big-img {
+    width: 100%;
+
+}
+
+.small-img {
+    position: relative;
+    margin-top: -200px;
+    margin-left: -100px;
+    width: 40%;
+}
+
+/* game name section */
+
+.games-name{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 80%;
+    margin:50px auto;
+}
+.logo-name{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    width: 200px;
+    margin: 10px;
+    border:3px solid white;
+}
+.logo-name:hover{
+    border:3px solid #FF42A5;
+    border-radius: 50px;
+    color:#FF42A5;
+}
+
+
+/* footer section */
+footer{
+    background-color: #0B0223;
+}
+.footer{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    color: white;
+    padding: 120px 0px;
+    font-size: 15px;
+}
+.footer-menu{
+    margin-top: 30px;
+}
+.footer-menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.policy{
+    margin-bottom: 25px;
+    color: rgba(255, 255, 255, 0.60);
+}
+.policy ul{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+.footer-icon{
+    margin: 40px 0px;
+}
+.footer-icon a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+}
+.footer .logo{
+    justify-content: center;
+}
+.cpoy-sing{
+    color: rgba(255, 255, 255, 0.60);
 }
 
 
@@ -227,10 +373,39 @@ body {
         width: 100%;
         text-align: center;
     }
+    .download-section{
+        flex-direction: column;
+    }
+    .download-content p{
+        width: 100%;
+    }
+    .download-img {
+        width: 80%;
+    }
+    .small-img {
+        position: relative;
+        margin-top: -80px;
+        margin-left: -50px;
+    }
+    .games-name{
+        /* grid-template-columns: 1fr 1fr 1fr; */
+    }
+    .logo-name{
+        width: 70px;
+        font-size:10px;
+    }
+    .logo-name img{
+        width: 30px;
+    }
+    .footer-menu ul,
+    .policy ul{
+        flex-wrap: wrap;
+    }
+
 }
 
 
-@media screen and (min-width: 576px) and (max-width: 768px) {
+@media screen and (min-width: 576px) and (max-width: 968px) {
     .gamer-container {
         flex-direction: column;
         align-items: center;
@@ -244,6 +419,32 @@ body {
     .gamer-content {
         width: 100%;
         text-align: center;
+    }
+    .games-name{
+        /* grid-template-columns: 1fr 1fr 1fr; */
+    }
+    
+    .logo-name{
+        width: 100px;
+        font-size:15px;
+    }
+    .logo-name img{
+        width: 50px;
+    }
+    
+    .download-section{
+        flex-direction: column;
+    }
+    .download-content p{
+        width: 100%;
+    }
+    .download-img {
+        width: 80%;
+    }
+    .small-img {
+        position: relative;
+        margin-top: -80px;
+        margin-left: -50px;
     }
 
 
